@@ -57,7 +57,7 @@ bool check(int mask) {
 void init() {
     for (int i = 0; i < (1 << SZ); i++) {
         int ones = count_ones(i);
-        if (ones == 9 && check(i)) {
+        if (ones == K && check(i)) {
             boards.push_back(i);
         }
     }
